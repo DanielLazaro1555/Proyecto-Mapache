@@ -44,9 +44,9 @@ var isPaused = false;
 // Función para alternar entre las imágenes de pausa y reproducción
 function toggleIcon() {
   if (isPaused) {
-    pauseIcon.src = "Pausa.png"; // Cambiar a la imagen de pausa
+    pauseIcon.src = "Play.png"; // Cambiar a la imagen de pausa
   } else {
-    pauseIcon.src = "Play.png"; // Cambiar a la imagen de reproducción
+    pauseIcon.src = "Pausa.png"; // Cambiar a la imagen de reproducción
   }
   isPaused = !isPaused; // Alternar el estado del botón
 }
@@ -56,9 +56,9 @@ pauseButton.addEventListener("click", toggleIcon);
 
 // Reproducir la música automáticamente cuando la página se carga
 window.addEventListener("load", function () {
-  togglePlayPause(); // Llamar a la función para alternar la reproducción de la música
+  // Mostrar mensaje de notificación
+  alert("Por favor, presiona Play para comenzar la reproducción.");
 });
 
-// Documentación por Daniel Huaman - 2024
 
 // Documentacion por Daniel Huaman - 2024

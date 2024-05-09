@@ -56,7 +56,10 @@ pauseButton.addEventListener("click", toggleIcon);
 
 // Reproducir la música automáticamente cuando la página se carga
 window.addEventListener("load", function () {
-  audio.play();
+  togglePlayPause(); // Llamar a la función para alternar la reproducción de la música
 });
+
+// Documentación por Daniel Huaman - 2024
+
 
 // Documentacion por Daniel Huaman - 2024

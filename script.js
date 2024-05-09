@@ -39,7 +39,7 @@ var pauseButton = document.getElementById("pauseButton");
 var pauseIcon = document.getElementById("pauseIcon");
 
 // Variable para controlar el estado del botón
-var isPaused = false;
+var isPaused = true;
 
 // Función para alternar entre las imágenes de pausa y reproducción
 function toggleIcon() {

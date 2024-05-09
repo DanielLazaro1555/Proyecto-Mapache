@@ -58,6 +58,9 @@ pauseButton.addEventListener("click", toggleIcon);
 window.addEventListener("load", function () {
   // Mostrar mensaje de notificación
   alert("Por favor, presiona Play para comenzar la reproducción.");
+
+  // Reproducir la música automáticamente al hacer clic en "Aceptar"
+  togglePlayPause();
 });
 
 

@@ -63,5 +63,4 @@ window.addEventListener("load", function () {
   togglePlayPause();
 });
 
-
 // Documentacion por Daniel Huaman - 2024

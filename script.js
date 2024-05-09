@@ -61,5 +61,4 @@ window.addEventListener("load", function () {
 
 // Documentación por Daniel Huaman - 2024
 
-
 // Documentacion por Daniel Huaman - 2024

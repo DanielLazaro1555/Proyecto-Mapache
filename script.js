@@ -46,7 +46,7 @@ function toggleIcon() {
   if (isPaused) {
     pauseIcon.src = "Play.png"; // Cambiar a la imagen de pausa
   } else {
-    pauseIcon.src = "Pause.png"; // Cambiar a la imagen de reproducción
+    pauseIcon.src = "Pausa.png"; // Cambiar a la imagen de reproducción
   }
   isPaused = !isPaused; // Alternar el estado del botón
 }

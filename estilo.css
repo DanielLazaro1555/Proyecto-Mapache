@@ -1,0 +1,94 @@
+body {
+  background: #161616;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-white {
+  color: #ffffff;
+}
+
+.spinner {
+  background: #f5dad8;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 300px;
+  aspect-ratio: 1;
+  animation: rotate 6s linear infinite;
+}
+
+.spinner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: bounce 0.2s linear infinite alternate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-5%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+
+.BarraProgreso {
+  width: 100%;
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 100%;
+  background: #f5dad8;
+  border-radius: 5px;
+  width: 50%;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  color: #fff;
+}
+
+/* Añadir clase para detener la animación */
+.spinner.paused img {
+  animation-play-state: paused;
+}
+.spinner.paused {
+  animation-play-state: paused;
+}
+
+#pauseButton {
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  max-width: 50px; /* Ancho máximo del botón */
+  background-color: #fff; /* Color de fondo blanco */
+  border-radius: 5px; /* Añadir bordes redondeados */
+  padding: 5px; /* Añadir un poco de espacio interno para el contenido */
+}
+
+#pauseButton img {
+  width: 100%; /* Establecer el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Mantener la proporción de aspecto de la imagen */
+}
+
+/* Estilo de aspecto de botón */
+#pauseButton:hover {
+  opacity: 0.8; /* Cambiar la opacidad al pasar sobre el botón */
+}

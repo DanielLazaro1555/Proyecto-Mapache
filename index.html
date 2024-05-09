@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="musica.png" type="image/x-icon">
+    <title>Proyecto Mapache</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Div para el spinner -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="spinner">
+                    <img src="MapacheProyect.png" alt="Mapache!" class="img-fluid">
+                </div>
+            </div>
+            <!-- Div para el control de la música -->
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="music-details text-center text-white">
+                    <div class="Titulo">
+                        <h1>Pedro</h1>
+                    </div>
+                    <div class="Artistas">
+                        <h5>Jaxomy, Agatino Romero & Raffaella Carrà</h5>
+                    </div>
+                </div>
+                <div class="BarraProgreso">
+                    <div class="progress"></div>
+                </div>
+                <div id="pauseButton">
+                    <img id="pauseIcon" src="Pausa.png" alt="Pausa">
+                </div>
+
+
+
+                <audio id="audio" autoplay loop>
+                    <source src="Pedro.flac" type="audio/flac">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <span class="text">© 2024 Proyecto Mapache | Todos los derechos reservados | Por Daniel Huamán
+                Lázaro</span>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

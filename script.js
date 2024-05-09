@@ -54,4 +54,10 @@ function toggleIcon() {
 // Agregar evento de clic al botón de pausa
 pauseButton.addEventListener("click", toggleIcon);
 
+// Reproducir la música automáticamente cuando la página se carga
+window.addEventListener("load", function() {
+  audio.play();
+});
+
+
 // Documentacion por Daniel Huaman - 2024
